@@ -1,0 +1,63 @@
+/*paleta de colores*/
+$negro: #000000;
+$blanco: #ffffff;
+$gris:#ffffff80;
+$gris-oscuro:#53535380;
+$gris-claro: #ffffffaf;
+$gold:#eae15180;
+$btn-bg-color:#00f7ff;
+
+/*tamaños de fuentes*/
+$fuente-principal:  'Roboto', sans-serif;
+$fuente-grande: 2rem;
+$fuente-mediana: 1.5rem;
+$fuente-chica: 1rem;
+$fuente-mini: 0.8rem;
+
+/*breackpoints*/
+$tablet: 768px;
+$desktop: 1024px;
+$desktopL: 1200px;
+
+/*tamaño img*/
+$img-mini: 3rem;
+$img-chica: 10rem;
+$img-mediana: 15rem;
+$img-grande: 20rem;
+
+/*tamaño margenes*/
+$margen-mini: 0.3rem;
+$margen-chico: 1rem;
+$margen-mediano: 2rem;
+$margen-grande: 3rem;
+$margen-XXL: 5rem;
+
+/*mixins*/
+@mixin flex-column-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-row-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@mixin grid-column-2-1fr-center {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+}
+
+@mixin grid-column-3-1fr-center {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+
+

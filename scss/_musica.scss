@@ -1,0 +1,28 @@
+.playlist, .sets { 
+    @extend .padre-track 
+} 
+
+.track-musica  {
+    @extend .track
+}
+
+@media (min-width: $tablet) {
+    .playlist, .sets {
+        @include grid-column-2-1fr-center;
+    }
+}
+
+@media (min-width: $desktop) {
+    .playlist
+    .track-musica  {
+        img {
+            width: $img-mediana;    
+        }
+    }
+    .sets
+    .track-musica  {
+        img {
+            width: $img-mediana;    
+        }
+    }
+}

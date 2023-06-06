@@ -1,0 +1,30 @@
+h1 {
+    margin: $margen-chico;
+}
+
+.padre-track { 
+    @include flex-column-center;
+    text-align: center;
+    gap: $margen-chico;  
+    .track  {
+        img {
+            width: $img-chica;    
+        }
+        & img:hover {
+            transform: scale(0.9,0.9);
+        }
+    }
+}
+
+@media (min-width: $tablet) {
+    .padre-track {
+        @include grid-column-3-1fr-center;
+        gap: 20px;
+        padding: 1rem;        
+    }
+}
+
+
+    
+    
+    

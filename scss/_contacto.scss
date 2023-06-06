@@ -1,0 +1,79 @@
+.main-contacto {
+    @include flex-column-center;
+    gap: $margen-mini;
+    img {
+        width: $img-chica;
+    }
+}
+
+input, textarea {
+    background-color: $gris-claro;
+}
+
+form {
+    @include flex-column-center;
+    gap: $margen-chico;
+
+    .form_campos {
+        @include flex-column-center;
+        color: $gold;
+        font-size: $fuente-mini;
+    }
+}
+
+.boton-form{
+    @include flex-column-center;
+    border: none;
+    background-color: $negro;
+    font-weight: bold;
+    color: $gold;
+    
+    &:hover {
+        color: $blanco;
+    }
+}
+
+.email-cel{
+    @include flex-column-center;
+    color: $gris;
+    margin-bottom: -1px;
+}
+
+.boton-descargar{
+    button {
+        background-color: $gold;
+        border: 1px solid $gold;
+        padding: $margen-mini;
+        font-weight: bold;
+    }
+
+    & button:hover {
+        transform: scale(0.9,0.9);
+    }
+}
+
+@media (min-width: $tablet) {
+    .main-contacto {
+        @include grid-column-2-1fr-center;
+        gap: $margen-XXL ;
+        img {
+            width: $img-mediana;    
+        }
+    }
+}
+
+@media (min-width: $desktopL) {
+    .main-contacto img {
+        width: $img-grande;
+    }
+    form .form_campos {
+        font-size: $fuente-mediana;
+    }
+}
+
+
+
+    
+
+
+

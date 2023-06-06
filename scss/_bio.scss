@@ -1,0 +1,38 @@
+.main_bio {
+    @include flex-column-center;
+    text-align: justify;
+    gap: $margen-XXL;
+    .card_p {
+        margin: 0px 10px;
+        color: $gold;
+        font-weight: 100;
+    }
+    .card_img {
+        width: $img-mediana;
+    }
+}
+
+@media (min-width: $tablet) {
+    .main_bio {
+        @include grid-column-2-1fr-center;
+        gap: 20px;
+        padding: 1rem;
+    }
+}
+
+@media (min-width: $desktop) {
+    .main_bio 
+    .card_p {
+        font-size: $fuente-mediana;
+    }
+    .main_bio
+    .card_img {
+        width: $img-grande;
+    }
+}
+
+@media (min-width: $desktopL) {
+    h1 {
+        margin-top: $margen-XXL + 2;
+    }
+}

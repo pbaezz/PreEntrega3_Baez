@@ -1,0 +1,135 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+img {
+    max-width: 100%;
+}
+
+hr {
+    color: $gris-claro;
+}
+
+h1  {
+    @include flex-column-center;
+    color: $gold;
+    font-weight: 700;
+    font-size: $fuente-chica;
+}
+
+h2{
+    @include flex-column-center;
+    color: $gris;
+    font-weight: bold;
+    font-size: $fuente-mini;
+    margin-left: $margen-mini;
+    margin-top: $margen-chico;
+}
+
+h4 {
+    @include flex-column-center;
+    color: $gold;
+    margin-top: $margen-mini;
+    font-size: $fuente-mini;
+}
+
+
+/*body*/
+body {
+    background-color: $negro;
+    font-family: $fuente-principal;
+}
+
+/*header*/
+.main_header {
+    .navbar {
+        width: 100%;
+        background-color: $negro;
+    }
+    img {
+        width: $img-chica;
+    }
+    & img:hover {
+        transform: scale(0.9,0.9);
+    }
+    .nav-link.active {
+        color: $gold;
+        font-weight: 700;
+    }
+    .navbar-toggler {
+        color: $negro;  
+        border: none;
+    }
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28234, 225, 81, 0.6%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+    .offcanvas-header {
+        background-color: $negro;
+        img {
+        width: $img-mini; 
+        }
+        & img:hover {
+            transform: none;
+        }
+    }
+    .btn-close {
+        background-color: $gold;
+    }
+    .offcanvas-body {
+        background-color: $negro;
+    }
+    a {
+        color: $gris; 
+    }
+}
+
+/*footer*/
+.redes_footer {
+    @include flex-row-center;
+    margin-bottom: $margen-chico;
+    gap: $margen-chico;
+        
+    a {
+        font-size: $fuente-mediana;
+        text-decoration: none;
+        list-style: none;
+    }
+    & :hover {
+        color: $blanco;
+    }
+}
+
+@media (min-width: $tablet) {
+    .redes_footer {
+        justify-content: flex-end; 
+        margin-right: 20px;        
+    }
+    h1 {
+        font-size: $fuente-grande;
+    }
+    h2, h4{
+        font-size: $fuente-chica;
+    }
+}
+
+@media (min-width: $desktop) {
+    .navbar {
+        img {
+            width: $img-mediana;
+        }
+    }
+}
+
+@media (min-width: $desktopL) {
+    .navbar {
+        img {
+            width: $img-grande;
+        }
+    }
+}
+
+
+
+
+
+
