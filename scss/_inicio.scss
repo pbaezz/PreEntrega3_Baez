@@ -1,5 +1,5 @@
 h1 {
-    margin: $margen-chico;
+    margin: $margen-chico 0px;
 }
 
 .padre-track { 
@@ -8,23 +8,22 @@ h1 {
     gap: $margen-chico;  
     .track  {
         img {
-            width: $img-chica;    
+            width: $img-chica;
+            transition: width 0.5s;    
         }
         & img:hover {
-            transform: scale(0.9,0.9);
+            width: $img-hover;
         }
     }
 }
+
 
 @media (min-width: $tablet) {
     .padre-track {
         @include grid-column-3-1fr-center;
-        gap: 20px;
-        padding: 1rem;        
     }
 }
 
-
+@media (min-width: $desktop) {
     
-    
-    
+}

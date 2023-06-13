@@ -2,6 +2,7 @@
     padding: 0px;
     margin: 0px;
 }
+
 img {
     max-width: 100%;
 }
@@ -42,6 +43,7 @@ body {
 
 /*header*/
 .main_header {
+    margin-bottom: $margen-XXL;
     .navbar {
         width: 100%;
         background-color: $negro;
@@ -55,6 +57,7 @@ body {
     .nav-link.active {
         color: $gold;
         font-weight: 700;
+        font-size: $fuente-nav-act;
     }
     .navbar-toggler {
         color: $negro;  
@@ -88,7 +91,7 @@ body {
     @include flex-row-center;
     margin-bottom: $margen-chico;
     gap: $margen-chico;
-        
+    
     a {
         font-size: $fuente-mediana;
         text-decoration: none;
@@ -100,36 +103,30 @@ body {
 }
 
 @media (min-width: $tablet) {
-    .redes_footer {
-        justify-content: flex-end; 
-        margin-right: 20px;        
-    }
-    h1 {
-        font-size: $fuente-grande;
-    }
-    h2, h4{
-        font-size: $fuente-chica;
-    }
-}
-
-@media (min-width: $desktop) {
     .navbar {
         img {
             width: $img-mediana;
         }
     }
+    h1 {
+        font-size: $fuente-mediana;
+    }
+    .redes_footer {
+        justify-content: flex-end;
+        margin-right: 30px;
+    }
 }
 
-@media (min-width: $desktopL) {
+@media (min-width: $desktop) {
+    .main_header {
+        margin-bottom: $margen-XXL + 1;
+    }
     .navbar {
         img {
             width: $img-grande;
         }
     }
+    h1 {
+        font-size: $fuente-grande;
+    }
 }
-
-
-
-
-
-

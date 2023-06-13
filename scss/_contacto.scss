@@ -57,8 +57,14 @@ form {
         @include grid-column-2-1fr-center;
         gap: $margen-XXL ;
         img {
-            width: $img-mediana;    
+            width: $img-grande;    
         }
+    }
+    form .form_campos {
+        font-size: $fuente-nav-act;
+    }
+    .boton-form {
+        font-size: $fuente-nav-act;
     }
 }
 

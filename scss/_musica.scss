@@ -16,13 +16,25 @@
     .playlist
     .track-musica  {
         img {
-            width: $img-mediana;    
+            width: $img-mediana;
+            transition: width 0.5s;      
+        }
+        & img:hover {
+            width: $img-hoverII;
         }
     }
     .sets
     .track-musica  {
         img {
-            width: $img-mediana;    
+            width: $img-mediana;
+            transition: width 0.5s;      
         }
+        & img:hover {
+            width: $img-hoverII;
+        }
+    }
+    h2 {
+    font-size: $fuente-mediana;    
+    
     }
 }
