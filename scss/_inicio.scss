@@ -8,6 +8,9 @@ h1 {
     gap: $margen-chico;  
     .track  {
         img {
+            -webkit-box-shadow: 0px 0px 10px 0px rgba(83,83,83,1);
+            -moz-box-shadow: 0px 0px 10px 0px rgba(83,83,83,1);
+            box-shadow: 0px 0px 10px 0px rgba(83,83,83,1);
             width: $img-chica;
             transition: width 0.5s;    
         }

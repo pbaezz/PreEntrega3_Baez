@@ -39,6 +39,7 @@ h4 {
 body {
     background-color: $negro;
     font-family: $fuente-principal;
+    margin-top: 10px;
 }
 
 /*header*/
@@ -49,7 +50,7 @@ body {
         background-color: $negro;
     }
     img {
-        width: $img-chica;
+        width: $img-hover;
     }
     & img:hover {
         transform: scale(0.9,0.9);
@@ -91,7 +92,6 @@ body {
     @include flex-row-center;
     margin-bottom: $margen-chico;
     gap: $margen-chico;
-    
     a {
         font-size: $fuente-mediana;
         text-decoration: none;
@@ -105,7 +105,7 @@ body {
 @media (min-width: $tablet) {
     .navbar {
         img {
-            width: $img-mediana;
+            width: $img-chica;
         }
     }
     h1 {
@@ -123,7 +123,7 @@ body {
     }
     .navbar {
         img {
-            width: $img-grande;
+            width: $img-mediana;
         }
     }
     h1 {
